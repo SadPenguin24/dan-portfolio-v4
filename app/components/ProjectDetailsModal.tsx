@@ -60,10 +60,10 @@ export function ProjectDetailsModal({
             {project.nda ? (
               <div className="bg-muted p-4 rounded-md">
                 <p className="text-sm text-muted-foreground">
-                  Due to a Non-Disclosure Agreement (NDA), I'm unable to share
-                  more detailed information about this project. The description
-                  provided here is a general overview that doesn't disclose any
-                  confidential details.
+                  Due to a Non-Disclosure Agreement (NDA), I&apos;m unable to
+                  share more detailed information about this project. The
+                  description provided here is a general overview that
+                  doesn&apos;t disclose any confidential details.
                 </p>
               </div>
             ) : (
