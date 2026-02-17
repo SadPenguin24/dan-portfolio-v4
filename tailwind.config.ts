@@ -5,8 +5,6 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "app/**/*.{ts,tsx}",
-    "components/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
@@ -15,11 +13,11 @@ module.exports = {
         serif: ["var(--font-playfair)"],
       },
       colors: {
+        charcoal: "#1C1F26",
+        offwhite: "#F8F5F0",
+        orange: "#F06820",
+        yellow: "#FFD23F",
         sage: "#CCD5AE",
-        cream: "#E9EDC9",
-        ivory: "#FEFAE0",
-        sand: "#FAEDCD",
-        tan: "#D4A373",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -53,22 +51,12 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        chart: {
-          "1": "hsl(var(--chart-1))",
-          "2": "hsl(var(--chart-2))",
-          "3": "hsl(var(--chart-3))",
-          "4": "hsl(var(--chart-4))",
-          "5": "hsl(var(--chart-5))",
-        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-    },
-    backgroundImage: {
-      "dan-profile": "url('../public/dan-profile.png')",
     },
   },
   plugins: [require("tailwindcss-animate")],
