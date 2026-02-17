@@ -1,0 +1,355 @@
+<!--
+  ====================================================================
+  RESUME TAILORING GUIDE — swap bullets per job posting
+  ====================================================================
+
+  FRONTEND-HEAVY roles (React, UI/UX, design systems):
+  - Lead with: MGX bullet 1 (Next.js apps), HCX bullet 1 (team lead, Next.js stack),
+    HCX bullet 3 (Figma-to-React landing pages), Polymekanix bullet 1 (Deventa UI + Mux)
+  - Consider adding back: "Mentored junior developers on React, Laravel, and Git
+    workflows through code reviews and pair programming sessions" (replaces Time Tracking)
+  - Skills: move Frontend row higher, add "Component Architecture" if relevant
+
+  BACKEND-HEAVY roles (APIs, databases, server-side):
+  - Lead with: MGX bullet 2 (security/encryption), HCX bullet 2 (middleware optimization),
+    HCX bullet 6 (Time Tracking Tool), Dark Spot bullet 4 (NestJS + React Native)
+  - Emphasize: REST APIs, MySQL, MongoDB, PostgreSQL, Prisma ORM, Node.js, Laravel
+  - Consider adding: "Designed and maintained RESTful API endpoints across 10+ projects"
+
+  DEVOPS / CLOUD roles:
+  - Lead with: MGX bullet 3 (Docker migration), MGX bullet 4 (GitLab CI/CD),
+    HCX bullet 5 (AWS + CI/CD for SOS), MGX bullet 5 (as-built documentation)
+  - Skills: move DevOps & Cloud row higher, consider adding "Nginx, SSH, cPanel"
+
+  FULL-STACK / GENERALIST roles:
+  - Use the resume as-is — it's balanced across the stack
+
+  FREELANCE / AGENCY roles:
+  - Lead with: Polymekanix + Dark Spot sections (client delivery focus)
+  - Emphasize: "2 weeks ahead of schedule", "5+ third-party integrations",
+    "international clients", end-to-end ownership
+  ====================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dan Hendrix F. Villadolid - Resume</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Calibri, Carlito, Arial, "Helvetica Neue", sans-serif;
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #1a1a1a;
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 0.5in 0.6in;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-size: 20pt;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  .header .title {
+    font-size: 12pt;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .header .contact-line {
+    font-size: 10pt;
+    color: #444;
+  }
+
+  .header .contact-line a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+
+  /* Section headings */
+  h2 {
+    font-size: 12pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1.5px solid #1a1a1a;
+    padding-bottom: 2px;
+    margin-top: 14px;
+    margin-bottom: 8px;
+  }
+
+  /* Summary */
+  .summary {
+    font-size: 10.5pt;
+    line-height: 1.45;
+    margin-bottom: 2px;
+  }
+
+  /* Job entry */
+  .job {
+    margin-bottom: 10px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+  }
+
+  .job-header .company {
+    font-size: 11pt;
+    font-weight: 700;
+  }
+
+  .job-header .dates {
+    font-size: 10.5pt;
+    font-weight: 400;
+    color: #333;
+  }
+
+  .job-title {
+    font-size: 10.5pt;
+    font-style: italic;
+    margin-bottom: 3px;
+  }
+
+  .job ul {
+    margin-left: 18px;
+    margin-top: 2px;
+  }
+
+  .job ul li {
+    font-size: 10.5pt;
+    line-height: 1.4;
+    margin-bottom: 2px;
+  }
+
+  /* Education */
+  .education-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .education-entry .school {
+    font-size: 11pt;
+    font-weight: 700;
+  }
+
+  .education-entry .years {
+    font-size: 10.5pt;
+    color: #333;
+  }
+
+  .education-entry .degree {
+    font-size: 10.5pt;
+    font-style: italic;
+    width: 100%;
+  }
+
+  /* Skills */
+  .skills-group {
+    margin-bottom: 4px;
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+
+  .skills-group .category {
+    font-weight: 700;
+  }
+
+  /* Print styles */
+  @media print {
+    @page {
+      size: Letter;
+      margin: 0.5in 0.6in;
+    }
+
+    body {
+      padding: 0;
+      font-size: 11pt;
+      color: #000;
+    }
+
+    h1 {
+      color: #000;
+    }
+
+    .header .title {
+      color: #000;
+    }
+
+    .header .contact-line {
+      color: #000;
+    }
+
+    .header .contact-line a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .job-header .dates {
+      color: #000;
+    }
+
+    .education-entry .years {
+      color: #000;
+    }
+
+    h2 {
+      border-bottom-color: #000;
+    }
+
+    .job {
+      page-break-inside: avoid;
+    }
+
+    h2 {
+      page-break-after: avoid;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Dan Hendrix F. Villadolid</h1>
+    <div class="title">Full-Stack Developer</div>
+    <div class="contact-line">
+      Cainta, Rizal | <a href="mailto:danhendrix.pro@gmail.com">danhendrix.pro@gmail.com</a> | +63 946 719 1020
+    </div>
+    <div class="contact-line">
+      <a href="https://github.com/SadPenguin24">github.com/SadPenguin24</a> | <a href="https://linkedin.com/in/sadpenguin24">linkedin.com/in/sadpenguin24</a> | <a href="https://danvilladolid.dev">danvilladolid.dev</a>
+    </div>
+  </div>
+
+  <!-- Professional Summary -->
+  <h2>Professional Summary</h2>
+  <p class="summary">
+    Full-Stack Developer with 4+ years of experience building production web applications using React, Next.js, PHP/Laravel, and Node.js &mdash; delivering enterprise platforms and freelance projects with measurable performance improvements, cross-functional team leadership, and end-to-end ownership from architecture to deployment.
+  </p>
+
+  <!-- Experience -->
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="company">MGX / Megaxcess</span>
+      <span class="dates">April 2025 &ndash; Present</span>
+    </div>
+    <div class="job-title">Mid Full Stack Developer</div>
+    <ul>
+      <li>Architected a consolidated reporting module that integrated multiple external data sources into enterprise audit workflows using Next.js and PHP/Laravel, expanding data coverage for more accurate compliance reporting across large-scale datasets</li>
+      <li>Implement application-level security measures including Content Security Policy, JWT authentication, and POST body encryption</li>
+      <li>Led migration of all company projects from Homestead/Vagrant to Docker, standardizing local development environments across teams</li>
+      <li>Collaborated with DevOps lead to build GitLab Runner CI/CD pipelines after pivoting from an initial Kubernetes/Jenkins approach, delivering automated build, test, and deployment workflows for dev and QA environments</li>
+      <li>Authored comprehensive as-built documentation for enterprise systems, enabling seamless knowledge transfer between development, QA, and operations teams</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="company">HCX Technology Solutions</span>
+      <span class="dates">October 2022 &ndash; April 2025</span>
+    </div>
+    <div class="job-title">Jr. Software Engineer II</div>
+    <ul>
+      <li>Led a team of 5+ developers on an HR management system: selected the Next.js tech stack, established coding standards, and conducted technical workshops</li>
+      <li>Optimized page load times from minutes to seconds by refactoring per-function encryption logic into centralized middleware</li>
+      <li>Built responsive corporate landing pages for enterprise automotive and technology clients, translating Figma designs into pixel-perfect React implementations</li>
+      <li>Inherited a Job Portal project with zero documentation, reverse-engineered the existing codebase, and integrated an AI-powered resume parser</li>
+      <li>Served as integration lead on a cross-platform SOS employee assistance system spanning web (React) and mobile (React Native), configuring CI/CD pipelines and AWS infrastructure</li>
+      <li>Developed an employee Time Tracking Tool for attendance management using React, PHP/Laravel, and MySQL, streamlining payroll data collection workflows</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="company">Polymekanix &mdash; Direct Clients</span>
+      <span class="dates">March 2023 &ndash; Present</span>
+    </div>
+    <div class="job-title">Full Stack Developer</div>
+    <ul>
+      <li>Built Deventa, an e-learning platform featuring Mux video pipeline (transcoding, DRM, adaptive streaming), Stripe payment processing, and AWS cloud infrastructure</li>
+      <li>Developed a multi-role Service Marketplace platform with CorePay payment integration, role-based access control, and real-time notifications</li>
+      <li>Led thorough upfront technical planning — database schema design, technology selection, and API documentation study — before writing code, enabling on-time delivery with zero scope creep across both client projects</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="company">Dark Spot Inc &mdash; Freelance Agency (Upwork)</span>
+      <span class="dates">March 2021 &ndash; September 2023</span>
+    </div>
+    <div class="job-title">Full Stack Developer</div>
+    <ul>
+      <li>Launched professional career while completing BS in Computer Science, delivering 4 production applications for international clients</li>
+      <li>Built a drag-and-drop React Form Builder that exports production-ready JSX code for an Australian client</li>
+      <li>Developed a real-time meeting and chat platform using Next.js, PostgreSQL, and Twilio with video/messaging integration</li>
+      <li>Built a cross-platform mobile expense tracking application using React Native, NestJS, and Expo, and a PMA-Grid organizational hierarchy tool within a 4-person agile team</li>
+    </ul>
+  </div>
+
+  <!-- Education -->
+  <h2>Education</h2>
+  <div class="education-entry">
+    <span class="school">Pangasinan State University</span>
+    <span class="years">2018 &ndash; 2022</span>
+  </div>
+  <div class="education-entry">
+    <span class="degree">Bachelor of Science in Computer Science</span>
+  </div>
+
+  <!-- Technical Skills -->
+  <h2>Technical Skills</h2>
+  <div class="skills-group">
+    <span class="category">Languages &amp; Frameworks:</span> React, Next.js, TypeScript, JavaScript, PHP, Laravel, Node.js, Express, NestJS, Angular, Vue.js
+  </div>
+  <div class="skills-group">
+    <span class="category">Databases:</span> MongoDB, MySQL, PostgreSQL, Prisma ORM
+  </div>
+  <div class="skills-group">
+    <span class="category">Frontend:</span> Tailwind CSS, Material UI, shadcn/ui, HTML5, CSS3, Responsive Design
+  </div>
+  <div class="skills-group">
+    <span class="category">DevOps &amp; Cloud:</span> Docker, AWS (EC2, S3), Git, GitLab CI/CD, Linux, Vercel
+  </div>
+  <div class="skills-group">
+    <span class="category">Integrations:</span> Stripe, Twilio, Mux, REST APIs
+  </div>
+  <div class="skills-group">
+    <span class="category">Methodologies:</span> Agile/Scrum, Code Review, Technical Documentation, Mentoring
+  </div>
+  <div class="skills-group">
+    <span class="category">Tools:</span> Claude AI, Cursor, Jira, Figma
+  </div>
+
+</body>
+</html>
